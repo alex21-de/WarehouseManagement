@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WarehouseManagement.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45b9b057a7c0c78465d2dadbf0ec765dee614fd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e73049d5fc9ea5ae37a79560a84c85a401a61cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("WarehouseManagement.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WarehouseManagement.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
