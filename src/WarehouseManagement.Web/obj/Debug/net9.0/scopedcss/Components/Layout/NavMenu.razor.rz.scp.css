@@ -81,6 +81,13 @@
     color: white;
 }
 
+.dropdown:hover > .dropdown-menu[b-k39uket44b] {
+    display: block;
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    top: 0;
+    left: 100%;
+}
+
 .nav-scrollable[b-k39uket44b] {
     display: none;
 }
@@ -100,6 +107,5 @@
 
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
-        overflow-y: auto;
     }
 }

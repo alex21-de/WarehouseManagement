@@ -42,8 +42,6 @@ C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\com
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\801qwxi01z-y7v9cxd14o.gz
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\ww18p5392p-h1s4sie4z3.gz
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\m1a11o7aij-0j3bgjxly4.gz
-C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\2ie65cgiru-7mx9ez6ao2.gz
-C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\4cufcs6vpn-7mx9ez6ao2.gz
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\staticwebassets.build.json
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\staticwebassets.development.json
@@ -77,3 +75,5 @@ C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\com
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\vppc2e854l-u9q1upor1n.gz
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\bnmjb5is9f-4d85u1mtcx.gz
 C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\8oscaw38qt-5ipweew5fc.gz
+C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\2ie65cgiru-sh8yqgyryw.gz
+C:\Projects\WarehauseManagement\src\WarehouseManagement.Web\obj\Debug\net9.0\compressed\4cufcs6vpn-sh8yqgyryw.gz
