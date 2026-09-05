@@ -1,7 +1,12 @@
 ﻿@page "/product-details"
+@using WarehouseManagement.Web.Models
 
 <h3>Product Details</h3>
 
+<p>Name: @product.Name</p>
+<p>Description: @product.Description</p>
+
 @code {
+    Product product = new Product();
 
 }
