@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\WarehouseManagement.Domain\WarehouseManagement.Domain.csproj" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="12.1.1" />
-    <PackageReference Include="MediatR" Version="14.2.0" />
+    <ProjectReference Include="..\WarehouseManagement.Domain\WarehouseManagement.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
