@@ -9,7 +9,7 @@ using WarehouseManagement.Domain.Entities;
 
 namespace WarehouseManagement.Infrastructure.Configuration
 {
-    internal class ProductConfiguration: IEntityTypeConfiguration<Product>
+    public class ProductConfiguration: IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {

@@ -1,5 +1,6 @@
 using Microsoft.OpenApi;
 using Microsoft.OpenApi.Models;
+using WarehouseManagement.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddSwaggerGen(c =>
     // The UI title/version label; not the OpenAPI version
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 });
+
+//Add Infrastructure
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 

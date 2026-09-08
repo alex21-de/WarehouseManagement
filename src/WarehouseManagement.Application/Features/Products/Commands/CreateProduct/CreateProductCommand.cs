@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace WarehouseManagement.Application.Features.Products.Commands.CreateProduct
 {
-    public record CreateProductCommand(string Name, string Description): IRequest<Guid>;
+    public record CreateProductCommand(string Name, string Description, string Category): IRequest<Guid>;
 }

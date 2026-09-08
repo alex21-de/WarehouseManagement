@@ -13,10 +13,11 @@ namespace WarehouseManagement.Domain.Entities
         public string? Description { get; set; }
         public string? Category { get; set; }
 
-        public Product(string? name, string? description)
+        public Product(string? name, string? description, string? category)
         {
             Name = name;
             Description = description;
+            Category = category;
         }
     }
 }
