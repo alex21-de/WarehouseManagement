@@ -15,7 +15,7 @@ namespace WarehouseManagement.Infrastructure
         {
             services.AddDbContext<AppDbContext>(
                 options => options.UseNpgsql(
-                    configuration.GetConnectionString("Host=postgres;Port=5432;Database=warehause_management;Username=postgres;Password=postgres")
+                    configuration.GetConnectionString("DefaultConnection")
                 )
             );
 
