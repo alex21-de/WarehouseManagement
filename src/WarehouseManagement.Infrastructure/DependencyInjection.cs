@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WarehouseManagement.Application.Interfaces.Repositories;
+using WarehouseManagement.Infrastructure.Repositories;
 
 namespace WarehouseManagement.Infrastructure
 {
@@ -19,6 +21,8 @@ namespace WarehouseManagement.Infrastructure
                 )
             );
 
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             //services.AddScoped<IUserRepository, UserRepository>();
 
             return services;

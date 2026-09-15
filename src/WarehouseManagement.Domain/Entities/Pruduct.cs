@@ -8,16 +8,30 @@ namespace WarehouseManagement.Domain.Entities
 {
     public class Product
     {
+        private Category category;
+
         public Guid Id { get; set; }
+        public string SKU { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
-        public string? Category { get; set; }
+        public decimal Price { get; set; }
+        public Guid CategoryId { get; set; }
+        public Category Category { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
-        public Product(string? name, string? description, string? category)
+        public Product(string sKU, string name, string description, decimal price, Guid categoryId, Category category, bool isActive, DateTime createdAt, DateTime updatedAt)
         {
+            SKU = sKU;
             Name = name;
             Description = description;
-            Category = category;
+            Price = price;
+            CategoryId = categoryId;
+            this.category = category;
+            IsActive = isActive;
+            CreatedAt = createdAt;
+            UpdatedAt = updatedAt;
         }
     }
 }
