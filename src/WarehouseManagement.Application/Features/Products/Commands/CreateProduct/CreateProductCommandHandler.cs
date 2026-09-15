@@ -19,7 +19,7 @@ namespace WarehouseManagement.Application.Features.Products.Commands.CreateProdu
 
         public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            var product = new Product(request.SKU, request.Name, request.Description, request.Price, request.CategoryId, request.Category, request.IsActive, request.CreatedAt, request.UpdatedAt);
+            var product = new Product(request.SKU, request.Name, request.Description, request.Price, request.CategoryId, request.IsActive, request.CreatedAt, request.UpdatedAt);
 
             await _repository.AddAsync(product);
 

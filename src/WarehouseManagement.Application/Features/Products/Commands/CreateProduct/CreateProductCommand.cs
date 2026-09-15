@@ -9,5 +9,5 @@ using WarehouseManagement.Domain.Entities;
 namespace WarehouseManagement.Application.Features.Products.Commands.CreateProduct
 {
     public record CreateProductCommand(string SKU, string Name, string Description, decimal Price, 
-        Guid CategoryId, Category Category, bool IsActive, DateTime CreatedAt, DateTime UpdatedAt) : IRequest<Guid>;
+        Guid CategoryId, bool IsActive, DateTime CreatedAt, DateTime UpdatedAt) : IRequest<Guid>;
 }

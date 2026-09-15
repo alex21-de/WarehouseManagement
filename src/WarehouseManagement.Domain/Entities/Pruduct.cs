@@ -21,14 +21,13 @@ namespace WarehouseManagement.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public Product(string sKU, string name, string description, decimal price, Guid categoryId, Category category, bool isActive, DateTime createdAt, DateTime updatedAt)
+        public Product(string sKU, string name, string description, decimal price, Guid categoryId, bool isActive, DateTime createdAt, DateTime updatedAt)
         {
             SKU = sKU;
             Name = name;
             Description = description;
             Price = price;
             CategoryId = categoryId;
-            this.category = category;
             IsActive = isActive;
             CreatedAt = createdAt;
             UpdatedAt = updatedAt;
