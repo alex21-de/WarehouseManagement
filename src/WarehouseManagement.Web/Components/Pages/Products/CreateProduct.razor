@@ -4,19 +4,60 @@
 
 <h3>Create Product</h3>
 
-<form>
+<EditForm Model="@product" OnSubmit="Save">
+    <div class="mb-3">
+        <label for="sku" class="form-label">SKU:</label>
+        <InputText class="form-control" id="sku" @bind-value="product.SKU" />
+    </div>
+
     <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
-        <input type="text" class="form-control" id="name" @bind-value="product.Name" />
+        <InputText class="form-control" id="name" @bind-value="product.Name" />
     </div>
 
     <div class="mb-3">
         <label for="Description" class="form-label">Description:</label>
-        <input type="text" class="form-control" id="Description" @bind-value="product.Description" />
+        <InputTextArea class="form-control" id="Description" @bind-value="product.Description" />
     </div>
 
-    <button type="submit" class="btn btn-primary mb-3" @onclick="Save">Save</button>
-</form>
+    <div class="row">
+        <div class="col mb-3">
+            <label for="price" class="form-label">Price:</label>
+            <InputNumber class="form-control" id="price" @bind-value="product.Price" />
+        </div>
+
+        <div class="col mb-3">
+            <label for="category" class="form-label">Category:</label>
+
+            <select class="form-select" @bind="product.CategoryId">
+                <option value="C#">C#</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>
+
+        <div class="col mb-3">
+            <div class="form-ckeck">
+                <InputCheckbox class="form-ckeck-input" id="isActive" @bind-value="product.IsActive" />
+                <label for="isActive" class="form-check-label">Is Active:</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col mb-3">
+            <label for="createdAt" class="form-label">Created at:</label>
+            <input type="datetime" class="form-control" id="createdAt" @bind-value="product.CreatedAt" />
+        </div>
+
+        <div class="col mb-3">
+            <label for="updatedAt" class="form-label">Updated at:</label>
+            <input type="datetime" class="form-control" id="updatedAt" @bind-value="product.UpdatedAt" />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-3">Save</button>
+</EditForm>
 
 @code {
     Product product = new();
