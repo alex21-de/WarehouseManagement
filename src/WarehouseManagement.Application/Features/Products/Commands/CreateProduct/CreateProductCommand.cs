@@ -8,6 +8,6 @@ using WarehouseManagement.Domain.Entities;
 
 namespace WarehouseManagement.Application.Features.Products.Commands.CreateProduct
 {
-    public record CreateProductCommand(string SKU, string Name, string Description, decimal Price, 
-        Guid CategoryId, bool IsActive, DateTime CreatedAt, DateTime UpdatedAt) : IRequest<Guid>;
+	public record CreateProductCommand(string SKU, string Name, string Description, decimal Price,
+		Guid CategoryId, bool IsActive, DateTime CreatedAt, DateTime UpdatedAt) : IRequest<Guid>;
 }

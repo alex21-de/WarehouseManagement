@@ -11,21 +11,21 @@ using WarehouseManagement.Infrastructure.Repositories;
 
 namespace WarehouseManagement.Infrastructure
 {
-    public static class DependencyInjection
-    {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddDbContext<AppDbContext>(
-                options => options.UseNpgsql(
-                    configuration.GetConnectionString("DefaultConnection")
-                )
-            );
+	public static class DependencyInjection
+	{
+		public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+		{
+			services.AddDbContext<AppDbContext>(
+				options => options.UseNpgsql(
+					configuration.GetConnectionString("DefaultConnection")
+				)
+			);
 
-            services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
-            //services.AddScoped<IUserRepository, UserRepository>();
+			services.AddScoped<IProductRepository, ProductRepository>();
+			services.AddScoped<ICategoryRepository, CategoryRepository>();
+			//services.AddScoped<IUserRepository, UserRepository>();
 
-            return services;
-        }
-    }
+			return services;
+		}
+	}
 }

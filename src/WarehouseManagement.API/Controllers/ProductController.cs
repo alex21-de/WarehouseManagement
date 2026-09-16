@@ -8,21 +8,20 @@ namespace WarehouseManagement.API.Controllers;
 [Route("[controller]")]
 public class ProductController : ControllerBase
 {
+	private readonly IMediator _mediator;
+	private readonly ILogger<ProductController> _logger;
 
-    private readonly IMediator _mediator;
-    private readonly ILogger<ProductController> _logger;
+	public ProductController(IMediator mediator, ILogger<ProductController> logger)
+	{
+		_mediator = mediator;
+		_logger = logger;
+	}
 
-    public ProductController(IMediator mediator, ILogger<ProductController> logger)
-    {
-        _mediator = mediator;
-        _logger = logger;
-    }
+	[HttpPost]
+	public async Task<IActionResult> Create(CreateProductCommand command)
+	{
+		var id = await _mediator.Send(command);
 
-    [HttpPost]
-    public async Task<IActionResult> Create(CreateProductCommand command)
-    {
-        var id = await _mediator.Send(command);
-
-        return Ok(id);
-    }
+		return Ok(id);
+	}
 }

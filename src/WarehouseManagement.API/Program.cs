@@ -14,8 +14,8 @@ builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    // The UI title/version label; not the OpenAPI version
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+	// The UI title/version label; not the OpenAPI version
+	c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 });
 
 //Add Infrastructure
@@ -26,14 +26,14 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+	app.MapOpenApi();
 
-    // Generates /swagger/v1/swagger.json
-    app.UseSwagger(); 
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-    });
+	// Generates /swagger/v1/swagger.json
+	app.UseSwagger();
+	app.UseSwaggerUI(c =>
+	{
+		c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+	});
 }
 
 app.UseHttpsRedirection();

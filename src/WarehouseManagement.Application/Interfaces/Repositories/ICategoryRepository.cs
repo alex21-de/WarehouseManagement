@@ -7,9 +7,9 @@ using WarehouseManagement.Domain.Entities;
 
 namespace WarehouseManagement.Application.Interfaces.Repositories
 {
-    public interface ICategoryRepository
-    {
-        Task AddAsync(Category category);
-        Task<Category?> GetByIdAsync(Guid id);
-    }
+	public interface ICategoryRepository
+	{
+		Task AddAsync(Category category);
+		Task<Category?> GetByIdAsync(Guid id);
+	}
 }

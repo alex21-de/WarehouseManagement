@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace WarehouseManagement.Application.Features.Products.Commands.CreateProduct
 {
-    public class CreateProductCommandValidator : AbstractValidator<CreateProductCommand>
-    {
-        public CreateProductCommandValidator() { 
-            RuleFor(x =>  x.Name).NotEmpty();
-        }
-    }
+	public class CreateProductCommandValidator : AbstractValidator<CreateProductCommand>
+	{
+		public CreateProductCommandValidator()
+		{
+			RuleFor(x => x.Name).NotEmpty();
+		}
+	}
 }

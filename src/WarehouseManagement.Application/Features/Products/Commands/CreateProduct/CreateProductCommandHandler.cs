@@ -9,21 +9,22 @@ using WarehouseManagement.Domain.Entities;
 
 namespace WarehouseManagement.Application.Features.Products.Commands.CreateProduct
 {
-    public class CreateProductCommandHandler: IRequestHandler<CreateProductCommand, Guid>
-    {
-        private readonly IProductRepository _repository;
+	public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, Guid>
+	{
+		private readonly IProductRepository _repository;
 
-        public CreateProductCommandHandler(IProductRepository repository) {
-            _repository = repository;
-        }
+		public CreateProductCommandHandler(IProductRepository repository)
+		{
+			_repository = repository;
+		}
 
-        public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
-        {
-            var product = new Product(request.SKU, request.Name, request.Description, request.Price, request.CategoryId, request.IsActive, request.CreatedAt, request.UpdatedAt);
+		public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+		{
+			var product = new Product(request.SKU, request.Name, request.Description, request.Price, request.CategoryId, request.IsActive, request.CreatedAt, request.UpdatedAt);
 
-            await _repository.AddAsync(product);
+			await _repository.AddAsync(product);
 
-            return product.Id;
-        }
-    }
+			return product.Id;
+		}
+	}
 }
