@@ -5,10 +5,10 @@ LABEL version="1.0"
 WORKDIR /src
 
 # Copy csproj
-COPY src/WarehouseManagement.API/WarehouseManagement.API.csproj src/WarehouseManagement.API/
-COPY src/WarehouseManagement.Application/WarehouseManagement.Application.csproj src/WarehouseManagement.Application/
-COPY src/WarehouseManagement.Domain/WarehouseManagement.Domain.csproj src/WarehouseManagement.Domain/
-COPY src/WarehouseManagement.Infrastructure/WarehouseManagement.Infrastructure.csproj src/WarehouseManagement.Infrastructure/
+COPY ../WarehouseManagement.API/WarehouseManagement.API.csproj src/WarehouseManagement.API/
+COPY ../WarehouseManagement.Application/WarehouseManagement.Application.csproj src/WarehouseManagement.Application/
+COPY ../WarehouseManagement.Domain/WarehouseManagement.Domain.csproj src/WarehouseManagement.Domain/
+COPY ../WarehouseManagement.Infrastructure/WarehouseManagement.Infrastructure.csproj src/WarehouseManagement.Infrastructure/
 
 # Restore
 RUN dotnet restore src/WarehouseManagement.API/WarehouseManagement.API.csproj

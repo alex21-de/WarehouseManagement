@@ -16,7 +16,7 @@ services:
 
   api:
     build:
-      context: ./src/WarehouseManagement.API
+      context: src/WarehouseManagement.API
       dockerfile: Dockerfile
 
     container_name: warehouse-management-api
@@ -33,7 +33,7 @@ services:
 
   web:
     build:
-      context: ./src/WarehouseManagement.Web
+      context: src/WarehouseManagement.Web
       dockerfile: Dockerfile
 
     container_name: warehouse-management-web
