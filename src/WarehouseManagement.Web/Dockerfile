@@ -5,7 +5,7 @@ LABEL version="1.0"
 WORKDIR /src
 
 # Copy csproj
-COPY ../../WarehouseManagement.Web/WarehouseManagement.Web.csproj src/WarehouseManagement.Web/
+COPY src/WarehouseManagement.Web/WarehouseManagement.Web.csproj src/WarehouseManagement.Web/
 
 # Restore
 RUN dotnet restore src/WarehouseManagement.Web/WarehouseManagement.Web.csproj
