@@ -12,12 +12,12 @@
 
     <div class="mb-3">
         <label for="name" class="form-label">Name:</label>
-        <InputText class="form-control" id="name" @bind-value="product.Name" />
+        <InputText class="form-control" id="name" @bind-value="product.Name" autocomplete="on"/>
     </div>
 
     <div class="mb-3">
-        <label for="Description" class="form-label">Description:</label>
-        <InputTextArea class="form-control" id="Description" @bind-value="product.Description" />
+        <label for="description" class="form-label">Description:</label>
+        <InputTextArea class="form-control" id="description" @bind-value="product.Description" />
     </div>
 
     <div class="row">
@@ -29,7 +29,7 @@
         <div class="col mb-3">
             <label for="category" class="form-label">Category:</label>
 
-            <select class="form-select" @bind="product.CategoryId">
+            <select class="form-select" id="category" @bind="product.CategoryId">
                 <option value="C#">C#</option>
                 <option value="JavaScript">JavaScript</option>
                 <option value="C++">C++</option>
