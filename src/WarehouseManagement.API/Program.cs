@@ -1,5 +1,4 @@
 using Microsoft.OpenApi;
-using Microsoft.OpenApi.Models;
 using WarehouseManagement.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

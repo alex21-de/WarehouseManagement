@@ -21,6 +21,7 @@ namespace WarehouseManagement.Infrastructure
 				)
 			);
 
+			services.AddScoped<IPostRepository, PostRepository>();
 			services.AddScoped<IProductRepository, ProductRepository>();
 			services.AddScoped<ICategoryRepository, CategoryRepository>();
 			//services.AddScoped<IUserRepository, UserRepository>();
