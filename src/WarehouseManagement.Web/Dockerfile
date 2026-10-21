@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 LABEL author="Alexei Rotari"
 LABEL version="1.0"
 
@@ -19,7 +19,7 @@ WORKDIR /src/src/WarehouseManagement.Web
 RUN dotnet publish -c Release -o /app/publish
 
 
-FROM mcr.microsoft.com/dotnet/aspnet:9.0
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 WORKDIR /app
 
